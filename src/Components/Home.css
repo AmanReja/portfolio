@@ -76,7 +76,7 @@ circle {
 }
 
 @media only screen and (max-width: 600px) {
-  html {
+  body {
     overflow-x: hidden;
   }
   .box-2-container {
@@ -84,9 +84,10 @@ circle {
 
     padding-top: 140px;
     position: relative;
-    left: -79px;
+    left: 0;
     overflow: hidden;
     overflow-y: hidden;
+    width: 100%;
   }
   .main-container {
     height: auto;

@@ -87,13 +87,13 @@ circle {
     display: block;
     padding-top: 62px;
     position: relative;
-    left: -65px;
+    left: -69px;
     width: 100%;
 
     width: 100%;
   }
   .main-container {
-    height: 630px;
+    height: 660px;
     width: 100%;
     overflow: hidden;
   }

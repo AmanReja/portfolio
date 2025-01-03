@@ -89,12 +89,11 @@ circle {
     padding-top: 140px;
     position: relative;
     left: 20px;
-    overflow: hidden;
-    overflow-y: hidden;
+
     width: 100%;
   }
   .main-container {
-    height: auto;
+    height: 525px;
     width: 100%;
     overflow: hidden;
   }

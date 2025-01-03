@@ -82,7 +82,7 @@ function Home() {
   }, []);
   return (
     <>
-      <div className="flex justify-center relative w-[100%]  ">
+      <div className="flex justify-center relative w-[100%] overflow-y-hidden ">
         <div
           className={
             !value.theme

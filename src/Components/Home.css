@@ -75,44 +75,49 @@ circle {
   }
 }
 
-@media only screen and (max-width:600px) {
-html,body{
-  overflow-x: hidden;
-}  .box-2-container{
+@media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+  .box-2-container {
+    display: block;
 
-  display: block;
-  
-  padding-top: 140px;
-  position: relative;
-  left:  -79px;
-  overflow: hidden;
-  overflow-y: hidden;
+    padding-top: 140px;
+    position: relative;
+    left: -79px;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+  .main-container {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  svg {
+    position: relative;
+    left: 180px;
+    overflow: hidden;
 
-} .main-container{
-  height: auto;
-  width: 100%;
-  overflow:hidden;
-}svg{
-  position: relative;
-  left: 180px;
-  overflow: hidden;
-
-  
-  transform: translatey(-160px);
-}.data-img{
-  position: relative;
-  top: -131px;
-  left: 211px;
-}.data-percent{
-  position: relative;
-  top: 0;
-}.footer-gap{
-  position: relative;
-  /* padding-top: 30px; */
-  top: 100px;
-}.footer-svg{
- display: none;
-}.image-box::after{
-    top: -150px;;
-}
+    transform: translatey(-160px);
+  }
+  .data-img {
+    position: relative;
+    top: -131px;
+    left: 211px;
+  }
+  .data-percent {
+    position: relative;
+    top: 0;
+  }
+  .footer-gap {
+    position: relative;
+    /* padding-top: 30px; */
+    top: 100px;
+  }
+  .footer-svg {
+    display: none;
+  }
+  .image-box::after {
+    top: -150px;
+  }
 }

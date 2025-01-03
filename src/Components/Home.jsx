@@ -172,9 +172,9 @@ function Home() {
       {/* <div className=" box-container w-[100%] bg-slate-500 h-[920px] absolute top-[110%] "></div> */}
       <div className="  w-[100%] flex flex-wrap gap-[50px] px-[20px]">
         {project.map((p) => (
-          <div className="image-box z-10 shadow-2xl p-[50px] hover:translate-y-[12px] hover:scale-[1] duration-300 transition-all">
+          <div className="image-box z-10 shadow-2xl  p-[50px]  hover:translate-y-[12px] duration-300 transition-all">
             <img
-              className="  w-[350px]  h-[350px ] object-cover"
+              className=" img-box w-[350px]  h-[350px ] object-cover"
               src={p.img}
               alt=""
             />

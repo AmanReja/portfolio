@@ -122,9 +122,16 @@ circle {
     display: none;
   }
   .image-box::after {
-    top: -150px;
+    top: -250px;
   }
   .nav {
+    width: 100%;
+  }
+  .image-box {
+    padding: 16px;
+    width: 100%;
+  }
+  .img-box {
     width: 100%;
   }
 }

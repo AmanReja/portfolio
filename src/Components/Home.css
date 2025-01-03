@@ -85,15 +85,15 @@ circle {
   }
   .box-2-container {
     display: block;
-
-    padding-top: 140px;
+    padding-top: 62px;
     position: relative;
-    left: 20px;
+    left: -62px;
+    width: 100%;
 
     width: 100%;
   }
   .main-container {
-    height: 525px;
+    height: 618px;
     width: 100%;
     overflow: hidden;
   }

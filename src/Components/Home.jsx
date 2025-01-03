@@ -124,7 +124,7 @@ function Home() {
         </div>
       </div>
 
-      <div className=" box-2-container flex sm:h-[400px]  items-center justify-center  h-auto  ">
+      <div className=" box-2-container flex sm:h-[400px]  items-center justify-center    ">
         {Skills.map((data, index) => (
           <>
             <div className="relative w-[160px] h-[160px] left-[180px] ">

@@ -85,12 +85,18 @@ html,body{
   padding-top: 140px;
   position: relative;
   left:  -79px;
+  overflow: hidden;
+  overflow-y: hidden;
 
 } .main-container{
   height: auto;
+  width: 100%;
+  overflow:hidden;
 }svg{
   position: relative;
   left: 180px;
+  overflow: hidden;
+
   
   transform: translatey(-160px);
 }.data-img{

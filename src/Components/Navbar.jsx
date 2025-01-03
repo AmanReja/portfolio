@@ -14,8 +14,8 @@ function Navbar({ themeHandel }) {
       <nav
         className={
           !value.theme
-            ? "bg-white shadow-2xl rounded fixed w-full z-20 top-0 start-0 "
-            : "bg-black shadow-2xl rounded fixed w-full z-20 top-0 start-0"
+            ? "bg-white shadow-2xl rounded fixed w-full z-20 top-0 start-0 nav "
+            : "bg-black shadow-2xl rounded fixed w-full z-20 top-0 start-0 nav"
         }
       >
         <label className="inline-flex items-center cursor-pointer absolute top-[22px] right-[100px]">

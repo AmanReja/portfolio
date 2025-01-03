@@ -76,15 +76,19 @@ circle {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  body,
+  html {
     overflow-x: hidden;
+  }
+  body {
+    overflow: hidden;
   }
   .box-2-container {
     display: block;
 
     padding-top: 140px;
     position: relative;
-    left: 0;
+    left: 20px;
     overflow: hidden;
     overflow-y: hidden;
     width: 100%;
@@ -120,5 +124,8 @@ circle {
   }
   .image-box::after {
     top: -150px;
+  }
+  .nav {
+    width: 100%;
   }
 }

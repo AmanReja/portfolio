@@ -56,14 +56,15 @@ circle {
 .anim-container {
   position: absolute;
   width: 42%;
-  height: 60px;
-
+  height: 55px;
   z-index: 2;
   left: 150px;
   display: inline-block;
   animation: type 4s steps(9) infinite;
   border-left: 2px solid rgba(8, 120, 224, 0.984);
   transition: none;
+  top: 63px;
+  box-sizing: content-box;
 }
 @keyframes type {
   40%,
@@ -96,6 +97,7 @@ circle {
     height: 660px;
     width: 100%;
     overflow: hidden;
+    padding: 23px;
   }
   svg {
     position: relative;
@@ -133,5 +135,13 @@ circle {
   }
   .img-box {
     width: 100%;
+  }
+  .anim-container {
+    position: absolute;
+    top: 130px;
+    z-index: 3;
+    height: 50px;
+    width: 100%;
+    left: 30px;
   }
 }

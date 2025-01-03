@@ -18,7 +18,7 @@ function Navbar({ themeHandel }) {
             : "bg-black shadow-2xl rounded fixed w-full z-20 top-0 start-0 nav"
         }
       >
-        <label className="inline-flex items-center cursor-pointer absolute top-[22px] right-[100px]">
+        <label className="inline-flex items-center cursor-pointer absolute top-[22px] sm:right-[100px] right-[20px]">
           <input
             onClick={() => {
               themeHandel();
@@ -32,14 +32,14 @@ function Navbar({ themeHandel }) {
         <div
           className={
             !value.theme
-              ? "max-w-screen-xl flex flex-wrap rounded-[10px] items-center w-[500px] bg-white shadow-2xl justify-center mx-auto p-4"
-              : "max-w-screen-xl flex flex-wrap rounded-[10px] items-center w-[500px] bg-black shadow-2xl justify-center mx-auto p-4"
+              ? "max-w-[334px] sm:max-w-screen-xl flex flex-wrap rounded-[10px] items-center w-[500px] bg-white shadow-2xl justify-center mx-auto p-4 transition-all duration-300"
+              : "max-w-[334px] sm:max-w-screen-xl flex flex-wrap rounded-[10px] items-center w-[500px] bg-black shadow-2xl justify-center mx-auto p-4 transition-all duration-300"
           }
         >
           <div
             onClick={handelopen}
-            className={`bg-lime-400 py-[3px] px-[2px] rounded flex flex-col  h-[30px] transition-all 
-             gap[9px] left-[-199px] relative items-center justify-between`}
+            className={`bg-lime-400 py-[3px] px-[2px] rounded flex sm:hidden flex-col  h-[30px] transition-all 
+             gap[9px] left-[-134px] relative items-center justify-between`}
           >
             <div
               className={
@@ -63,7 +63,7 @@ function Navbar({ themeHandel }) {
           <div
             className={`items-center justify-between ${
               open ? "hidden" : ""
-            } w-full md:flex md:w-auto md:order-1`}
+            } w-full md:flex md:w-auto md:order-1 transition-all duration-300`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">

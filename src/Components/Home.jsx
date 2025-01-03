@@ -17,6 +17,7 @@ import tictac from "../assets/Project images/tictac.png";
 import todo from "../assets/Project images/todo.png";
 import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   const value = useContext(Theme);
@@ -27,15 +28,51 @@ function Home() {
   };
   console.log(55, load);
   const project = [
-    { name: "Gaming website", img: game },
-    { name: "Imbs website", img: imbs },
-    { name: "Item Shope", img: itemshope },
-    { name: "myntra Shope", img: myntra },
-    { name: "Get recipes", img: recipe },
-    { name: "Tictacto", img: tictac },
-    { name: "Todo List", img: todo },
-    { name: "Calculator", img: cal },
-    { name: "Text converter", img: text }
+    {
+      name: "Gaming website",
+      img: game,
+      wlink: "https://gaming-website-one.vercel.app/"
+    },
+    {
+      name: "Imbs website",
+      img: imbs,
+      wlink: "https://react-project1-three-pi.vercel.app/"
+    },
+    {
+      name: "Item Shope",
+      img: itemshope,
+      wlink: "https://new-repo-rosy.vercel.app/"
+    },
+    {
+      name: "myntra Shope",
+      img: myntra,
+      wlink: "https://dvsdvsdb.vercel.app/"
+    },
+    {
+      name: "Get recipes",
+      img: recipe,
+      wlink: "https://recipe-api-lyart.vercel.app/"
+    },
+    {
+      name: "Tictacto",
+      img: tictac,
+      wlink: "https://tic-tac-to-xi.vercel.app/"
+    },
+    {
+      name: "Todo List",
+      img: todo,
+      wlink: "https://todu-list-ten.vercel.app/"
+    },
+    {
+      name: "Calculator",
+      img: cal,
+      wlink: "https://calculator2-0-vert.vercel.app/"
+    },
+    {
+      name: "Text converter",
+      img: text,
+      wlink: "https://code-lac-eight.vercel.app/"
+    }
   ];
 
   const Skills = [
@@ -95,18 +132,18 @@ function Home() {
             src={Aman}
             alt=""
           />
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-[20px] sm:text-left text-center">
             <h1 className="text-3xl absolute font-medium top-[15%]  ">
               I am a,
             </h1>
-            <h1 className="text-5xl font-medium  relative left-[100px] ">
+            <h1 className="sm:text-5xl text-[30px] sm:top-0 top-[50px] font-medium  sm:left-[100px] relative left-[20px] sm:p-0 pb-[50px]">
               Mernstack developer
             </h1>
             <div
               className={
                 !value.theme
-                  ? "anim-container bg-slate-100 duration-0"
-                  : "anim-container bg-black duration-0"
+                  ? "anim-container bg-slate-100 duration-0 "
+                  : "anim-container bg-black duration-0 "
               }
             ></div>
             <h2 className="font-thin text-1xl">
@@ -178,9 +215,12 @@ function Home() {
               src={p.img}
               alt=""
             />
-            <h1 className="heading font-thin text-center text-2xl relative top-[100px] opacity-0 transition-all duration-300">
-              {p.name}
-            </h1>
+
+            <Link to={p.wlink} target="_blank">
+              <h1 className="heading font-thin text-center text-2xl relative top-[100px] opacity-0 transition-all duration-300 cursor-pointer">
+                {p.name}
+              </h1>
+            </Link>
           </div>
         ))}
       </div>

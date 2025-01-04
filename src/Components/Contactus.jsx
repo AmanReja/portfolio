@@ -1,5 +1,6 @@
 import { React, useState, useRef } from "react";
 import "./Skills.css";
+import Swal from "sweetalert2";
 
 function Contactus() {
   const [name, setName] = useState("");
@@ -13,6 +14,11 @@ function Contactus() {
   console.log(33, name, message, email);
 
   const receivemail = async (e) => {
+    Swal.fire({
+      title: "Thank You",
+      text: "For sending message",
+      icon: "success"
+    });
     setLoad(true);
     e.preventDefault();
     const new_mail = {

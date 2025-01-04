@@ -95,10 +95,10 @@ function Skills() {
   }, []);
   return (
     <>
-      <div className="h-auto pb-[200px]">
+      <div className="sm:h-auto sm:pb-[200px] h-auto pb-[300px] relative sm:top-0 top-[341px] sm:left-0 left-[-173px] px-[80px]">
         {Skill.map((data, index) => (
-          <div className="w-[100%] h-[60px] relative top-[200px] px-[500px]">
-            <div className="mb-7">
+          <div className="w-[100%] h-[60px]  sm:left-0 relative sm:top-[200px] sm:px-[500px]  ">
+            <div className="mb-7 relative sm:left-0 left-0 sm:top-0 top-0">
               <div className="flex justify-between py-1">
                 <span className="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
                   {data.name}
@@ -137,7 +137,7 @@ function Skills() {
               </svg>
             </div>
             <img
-              className=" relative top-[-60px] w-[40px] h-[40px] right-[60px] object-cover"
+              className=" relative sm:top-[-60px] w-[40px]  h-[40px] sm:right-[60px] right-[-121px] top-[-210px] object-cover"
               src={data.img}
               alt=""
             />

@@ -26,7 +26,7 @@ function Contactus() {
       body: JSON.stringify(new_mail)
     };
     const response = await fetch(
-      `http://localhost:3000/sendMail`,
+      `https://backend-5u2p.onrender.com/sendMail`,
       requestoptions
     );
     const data = await response.json();

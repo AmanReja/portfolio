@@ -96,6 +96,9 @@ function Navbar({ themeHandel }) {
               </li>
               <li>
                 <Link
+                  onClick={() => {
+                    setOpen(true);
+                  }}
                   to="/project"
                   className={`block py-2 px-3  hover:text-red-500 duration-300 ${
                     !value.theme ? `text-black` : `text-white`

@@ -39,174 +39,151 @@ function Contactus() {
 
   return (
     <>
-      <section className="body-font relative bg-gray-900 text-gray-400">
-        <div className="container mx-auto px-5 py-24">
-          <div className="mb-12 flex w-full flex-col text-center">
-            <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
-              Contact me
-            </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-              Feel free to reach out to me! Whether you have a question,
-              feedback, or a collaboration proposal, I'd love to hear from you.
+      <div className={""} id="contact">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
+          <br />
+          <h2 className="text-4xl font-bold">Contact</h2>
+          <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto ">
+            Want to contact me? Choose an option below to contact me.
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
+          <div>
+            <h2 className="text-lg font-bold ">Contact Us</h2>
+            <p className="max-w-sm mt-4 mb-4 ">
+              Have something to say? We are here to help. Fill up the form or
+              send email or call phone.
             </p>
-          </div>
-          {load ? (
-            <div className="flex justify-center items-center">
-              <div className="loader"></div>
+            <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
+                ></path>
+              </svg>
+              <span>14th avenue glory road</span>
             </div>
-          ) : (
-            <div className="mx-auto md:w-2/3 lg:w-1/2">
+            <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                ></path>
+              </svg>
+              <a className="" href="#">
+                amanmolla742@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                ></path>
+              </svg>
+              <a className="" href="#">
+                9749404582
+              </a>
+            </div>
+          </div>
+          <div>
+            {load ? (
+              <div className="flex justify-center items-center">
+                <div className="loader"></div>
+              </div>
+            ) : (
               <form
                 onSubmit={(e) => {
                   receivemail(e);
                 }}
-                className="-m-2 flex flex-wrap "
               >
-                {/* form */}
-                <div className="w-1/2 p-2">
-                  <div className="relative">
-                    <input
-                      ref={nameRef}
-                      onChange={(e) => {
-                        setName(e.target.value);
-                      }}
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
-                      placeholder="Name"
-                    />
-                    <label
-                      htmlFor="name"
-                      className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
-                    >
-                      Name
-                    </label>
-                  </div>
+                <input
+                  type="checkbox"
+                  id
+                  className="hidden"
+                  style={{ display: "none" }}
+                  name="botcheck"
+                />
+                <div className="mb-5">
+                  <input
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                    ref={nameRef}
+                    type="text"
+                    placeholder="Full Name"
+                    autoComplete="false"
+                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    name="name"
+                  />
                 </div>
-                <div className="w-1/2 p-2">
-                  <div className="relative">
-                    <input
-                      ref={emailRef}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
-                      placeholder="Email"
-                    />
-                    <label
-                      htmlFor="email"
-                      className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
-                    >
-                      Email
-                    </label>
-                  </div>
+                <div className="mb-5">
+                  <label htmlFor="email_address" className="sr-only">
+                    Email Address
+                  </label>
+                  <input
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    ref={emailRef}
+                    id="email_address"
+                    type="email"
+                    placeholder="Email Address"
+                    autoComplete="false"
+                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    name="email"
+                  />
                 </div>
-
-                <div className="mt-4 w-full p-2">
-                  <div className="relative">
-                    <textarea
-                      ref={messageRef}
-                      onChange={(e) => {
-                        setMessage(e.target.value);
-                      }}
-                      id="message"
-                      name="message"
-                      className="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
-                      placeholder="Message"
-                      defaultValue={""}
-                    />
-                    <label
-                      htmlFor="message"
-                      className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
-                    >
-                      Message
-                    </label>
-                  </div>
+                <div className="mb-3">
+                  <textarea
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                    ref={messageRef}
+                    placeholder="Your Message"
+                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    name="message"
+                    defaultValue={"                    "}
+                  />
                 </div>
-                <div className="w-full p-2">
-                  <button
-                    type="submit"
-                    className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
-                  >
-                    SEND
-                  </button>
-                </div>
-                {/* footer */}
-                <div className="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
-                  <a className="text-indigo-400">amanmolla742@gmail.com</a>
-                  <p className="my-5 leading-normal">
-                    West bengal <br />
-                    barasat Deganga 24 pgs(n)
-                  </p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                      </svg>
-                    </a>
-                    <a className="ml-4 text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                      </svg>
-                    </a>
-                    <a className="ml-4 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect
-                          width={20}
-                          height={20}
-                          x={2}
-                          y={2}
-                          rx={5}
-                          ry={5}
-                        />
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-                      </svg>
-                    </a>
-                    <a className="ml-4 text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
-                      </svg>
-                    </a>
-                  </span>
-                </div>
+                <button
+                  type="submit"
+                  className="w-full py-4 font-semibold text-white transition-colors bg-lime-400 hover:bg-sky-300 duration-300 "
+                >
+                  Send Message
+                </button>
               </form>
-            </div>
-          )}
+            )}
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

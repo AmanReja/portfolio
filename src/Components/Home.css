@@ -94,7 +94,7 @@ circle {
     width: 100%;
   }
   .main-container {
-    height: 660px;
+    height: 690px;
     width: 100%;
     overflow: hidden;
     padding: 23px;
@@ -138,10 +138,10 @@ circle {
   }
   .anim-container {
     position: absolute;
-    top: 130px;
+    top: 152px;
     z-index: 3;
-    height: 50px;
-    width: 100%;
-    left: 30px;
+    height: 37px;
+    width: 88%;
+    left: 36px;
   }
 }

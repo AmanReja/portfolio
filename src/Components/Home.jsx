@@ -18,6 +18,7 @@ import todo from "../assets/Project images/todo.png";
 import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
 import { Link } from "react-router-dom";
+import resume from "../assets/images/Aman.pdf";
 
 function Home() {
   const value = useContext(Theme);
@@ -117,6 +118,9 @@ function Home() {
     });
     return () => clearTimeout(timeout);
   }, []);
+
+  const Downloadcv = () => {};
+
   return (
     <>
       <div className="flex justify-center relative w-[100%] overflow-y-hidden ">
@@ -146,6 +150,14 @@ function Home() {
                   : "anim-container bg-black duration-0 "
               }
             ></div>
+
+            <button className="bg-lime-400 hover:bg-violet-600 w-[150px] relative sm:block  rounded h-[40px]">
+              <a href={resume} download="resume">
+                {" "}
+                Download cv{" "}
+              </a>
+            </button>
+
             <h2 className="font-thin text-1xl">
               Dynamic and detail-oriented MERN developer. Implementing
               user-friendly web applications. Proficient in HTML, CSS,

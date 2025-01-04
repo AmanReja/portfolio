@@ -8,6 +8,7 @@ import node from "../assets/logo/nodejs.png";
 import tailwind from "../assets/logo/tailwind.png";
 import Mongodb from "../assets/logo/Mongo.png";
 import mongoosejs from "../assets/logo/Mongoose.png";
+import "./Skills.css";
 
 function Skills() {
   const [load, setLoad] = useState(false);
@@ -100,10 +101,10 @@ function Skills() {
           <div className="w-[100%] h-[60px]  sm:left-0 relative sm:top-[200px] sm:px-[500px]  ">
             <div className="mb-7 relative sm:left-0 left-0 sm:top-0 top-0">
               <div className="flex justify-between py-1">
-                <span className="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
+                <span className="name-box text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
                   {data.name}
                 </span>
-                <span className="text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
+                <span className="percent-box text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
                   {load ? animatedPercents[index] : 0}%
                 </span>
               </div>

@@ -22,7 +22,7 @@ function Footer() {
                 href="#"
                 aria-label="Go home"
                 title="Company"
-                className="inline-flex items-center"
+                className="sm:inline-flex hidden items-center"
               >
                 <svg
                   className="w-8 text-teal-accent-400"

@@ -95,14 +95,14 @@ function Navbar({ themeHandel }) {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/project"
                   className={`block py-2 px-3  hover:text-red-500 duration-300 ${
                     !value.theme ? `text-black` : `text-white`
                   }`}
                 >
                   Projectes
-                </a>
+                </Link>
               </li>
               <li>
                 <Link

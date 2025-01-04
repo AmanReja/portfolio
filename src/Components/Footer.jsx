@@ -1,6 +1,9 @@
-import React from "react";
+import { React, useContext } from "react";
+import Theme from "./Context/Theme";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const value = useContext(Theme);
   return (
     <>
       <div className="footer-gap relative mt-16 bg-deep-purple-accent-400">
@@ -180,22 +183,19 @@ function Footer() {
                       Wiki
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                    >
-                      Forum
-                    </a>
-                  </li>
+                  <li></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
-            <p className="text-sm text-gray-100">
+            <h1
+              className={`text-sm ${
+                value.theme ? " text-black" : "text-white"
+              }-100`}
+            >
               © Copyright 2020 Lorem Inc. All rights reserved.
-            </p>
+            </h1>
             <div className="flex items-center mt-4 space-x-4 sm:mt-0">
               <a
                 href="#"

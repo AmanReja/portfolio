@@ -51,7 +51,9 @@ function Contactus() {
             </p>
           </div>
           {load ? (
-            <div className="loader"></div>
+            <div className="flex justify-center items-center">
+              <div className="loader"></div>
+            </div>
           ) : (
             <div className="mx-auto md:w-2/3 lg:w-1/2">
               <form

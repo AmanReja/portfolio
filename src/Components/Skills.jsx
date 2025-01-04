@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useContext } from "react";
 import js from "../assets/logo/js.png";
 import react from "../assets/logo/react.png";
 import express from "../assets/logo/express.png";
@@ -9,8 +9,10 @@ import tailwind from "../assets/logo/tailwind.png";
 import Mongodb from "../assets/logo/Mongo.png";
 import mongoosejs from "../assets/logo/Mongoose.png";
 import "./Skills.css";
+import Theme from "./Context/Theme";
 
 function Skills() {
+  const value = useContext(Theme);
   const [load, setLoad] = useState(false);
   const Skill = [
     { name: "Nodejs", color: "#bfff00", img: node, percent: 70, str: 70 },
@@ -96,6 +98,12 @@ function Skills() {
   }, []);
   return (
     <>
+      {" "}
+      <p
+        className={`text-center text-5xl translate-y-[122px] uppercase w-[100% ] relative left-[-20px] font-semibold`}
+      >
+        Skills
+      </p>
       <div className="sm:h-auto sm:pb-[200px] h-auto pb-[300px] relative sm:top-0 top-[341px] sm:left-0 left-[-173px] px-[80px]">
         {Skill.map((data, index) => (
           <div className="w-[100%] h-[60px]  sm:left-0 relative sm:top-[200px] sm:px-[500px]  ">

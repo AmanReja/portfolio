@@ -14,11 +14,6 @@ function Contactus() {
   console.log(33, name, message, email);
 
   const receivemail = async (e) => {
-    Swal.fire({
-      title: "Thank You",
-      text: "For sending message",
-      icon: "success"
-    });
     setLoad(true);
     e.preventDefault();
     const new_mail = {
@@ -36,6 +31,13 @@ function Contactus() {
       requestoptions
     );
     const data = await response.json();
+    if (data !== null) {
+      Swal.fire({
+        title: `Thank You ${name}`,
+        text: "Message will be delivered to me within a short time",
+        icon: "success"
+      });
+    }
     setLoad(false);
     console.log(data);
     nameRef.current.value = "";
@@ -95,6 +97,7 @@ function Contactus() {
                 />
                 <div className="mb-5">
                   <input
+                    required
                     onChange={(e) => {
                       setName(e.target.value);
                     }}
@@ -111,6 +114,7 @@ function Contactus() {
                     Email Address
                   </label>
                   <input
+                    required
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
@@ -130,9 +134,8 @@ function Contactus() {
                     }}
                     ref={messageRef}
                     placeholder="Your Message"
-                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    className="w-full px-4 py-3 border-2  dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
                     name="message"
-                    defaultValue={"                    "}
                   />
                 </div>
                 <button

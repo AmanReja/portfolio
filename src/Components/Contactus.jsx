@@ -109,8 +109,8 @@ function Contactus() {
                     autoComplete="false"
                     className={`w-full px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
                       value.theme
-                        ? "focus:border-white focus:border-[5px]"
-                        : "focus:border-lime-400 focus:border-[5px]"
+                        ? "focus:border-white focus:border-[5px] duration-300"
+                        : "focus:border-lime-400 focus:border-[5px] duration-300"
                     }`}
                     name="name"
                   />
@@ -131,8 +131,8 @@ function Contactus() {
                     autoComplete="false"
                     className={`w-full px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
                       value.theme
-                        ? "focus:border-white focus:border-[5px]"
-                        : "focus:border-lime-400 focus:border-[5px]"
+                        ? "focus:border-white focus:border-[5px] duration-300"
+                        : "focus:border-lime-400 focus:border-[5px] duration-300"
                     }`}
                     name="email"
                   />
@@ -146,8 +146,8 @@ function Contactus() {
                     placeholder="Your Message"
                     className={`w-full h-[200px] px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
                       value.theme
-                        ? "focus:border-white focus:border-[5px]"
-                        : "focus:border-lime-400 focus:border-[5px]"
+                        ? "focus:border-white focus:border-[5px] duration-300"
+                        : "focus:border-lime-400 focus:border-[5px] duration-300"
                     }`}
                     name="message"
                   />

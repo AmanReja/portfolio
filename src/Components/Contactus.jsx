@@ -1,8 +1,10 @@
-import { React, useState, useRef } from "react";
+import { React, useState, useRef, useContext } from "react";
 import "./Skills.css";
 import Swal from "sweetalert2";
+import Theme from "./Context/Theme";
 
 function Contactus() {
+  const value = useContext(Theme);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -105,7 +107,11 @@ function Contactus() {
                     type="text"
                     placeholder="Full Name"
                     autoComplete="false"
-                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    className={`w-full px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
+                      value.theme
+                        ? "focus:border-white focus:border-[5px]"
+                        : "focus:border-lime-400 focus:border-[5px]"
+                    }`}
                     name="name"
                   />
                 </div>
@@ -123,7 +129,11 @@ function Contactus() {
                     type="email"
                     placeholder="Email Address"
                     autoComplete="false"
-                    className="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    className={`w-full px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
+                      value.theme
+                        ? "focus:border-white focus:border-[5px]"
+                        : "focus:border-lime-400 focus:border-[5px]"
+                    }`}
                     name="email"
                   />
                 </div>
@@ -134,7 +144,11 @@ function Contactus() {
                     }}
                     ref={messageRef}
                     placeholder="Your Message"
-                    className="w-full px-4 py-3 border-2  dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    className={`w-full h-[200px] px-4 py-3 border-2 rounded-md outline-none bg-gray-900 placeholder:text-white text-white     ${
+                      value.theme
+                        ? "focus:border-white focus:border-[5px]"
+                        : "focus:border-lime-400 focus:border-[5px]"
+                    }`}
                     name="message"
                   />
                 </div>

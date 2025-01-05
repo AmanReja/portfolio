@@ -17,7 +17,7 @@ import tictac from "../assets/Project images/tictac.png";
 import todo from "../assets/Project images/todo.png";
 import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import resume from "../assets/images/Aman.pdf";
 
 function Home() {

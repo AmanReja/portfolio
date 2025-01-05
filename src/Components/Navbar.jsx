@@ -1,6 +1,6 @@
 import { React, useState, useContext } from "react";
 import Theme from "./Context/Theme";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar({ themeHandel }) {
   const value = useContext(Theme);
@@ -82,7 +82,7 @@ function Navbar({ themeHandel }) {
                 </Link>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => {
                     setOpen(true);
                   }}
@@ -92,7 +92,7 @@ function Navbar({ themeHandel }) {
                   }`}
                 >
                   Skills
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <Link

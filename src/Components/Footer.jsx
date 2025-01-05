@@ -198,6 +198,7 @@ function Footer() {
             </h1>
             <div className="flex sm:left-0 left-[-32px] relative items-center mt-7 space-x-4 sm:mt-0">
               <Link
+                target="_blank"
                 to="https://www.linkedin.com/in/aman-reja-85527b1a1/"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
@@ -213,6 +214,7 @@ function Footer() {
                 </svg>
               </Link>
               <Link
+                target="_blank"
                 to="https://www.instagram.com/_aman_reja_/?hl=en"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
@@ -222,6 +224,7 @@ function Footer() {
                 </svg>
               </Link>
               <Link
+                target="_blank"
                 to="https://www.facebook.com/aman.reja.794/"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >

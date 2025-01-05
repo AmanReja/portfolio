@@ -196,7 +196,7 @@ function Footer() {
             >
               © Copyright 2020 Lorem Inc. All rights reserved.
             </h1>
-            <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+            <div className="flex sm:left-0 left-[-32px] relative items-center mt-7 space-x-4 sm:mt-0">
               <Link
                 to="https://www.linkedin.com/in/aman-reja-85527b1a1/"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"

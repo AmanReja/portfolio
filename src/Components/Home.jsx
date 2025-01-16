@@ -40,9 +40,9 @@ function Home() {
       wlink: "https://react-project1-three-pi.vercel.app/"
     },
     {
-      name: "Item Shope",
+      name: "Book Shop",
       img: itemshope,
-      wlink: "https://new-repo-rosy.vercel.app/"
+      wlink: "https://front-book-mu.vercel.app/"
     },
     {
       name: "myntra Shope",

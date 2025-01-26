@@ -66,7 +66,7 @@ function Contactus() {
               send email or call phone.
             </p>
             <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-gray-400">
-              <span>14th avenue glory road</span>
+              <span>West bengal deganga 24 pgs(n)</span>
             </div>
             <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
               <a className="" href="#">

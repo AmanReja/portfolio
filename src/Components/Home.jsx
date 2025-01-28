@@ -20,6 +20,7 @@ import text from "../assets/Project images/text.png";
 import wal from "../assets/Project images/wal.png";
 import { Link, NavLink } from "react-router-dom";
 import cv from "../assets/images/cv.pdf";
+import resume from "../assets/images/Amancv.pdf";
 
 function Home() {
   const value = useContext(Theme);
@@ -158,7 +159,7 @@ function Home() {
             ></div>
 
             <button className="bg-lime-400 hover:bg-violet-600 w-[150px] relative sm:block  rounded h-[40px]">
-              <a href={cv} download="cv">
+              <a href={resume} download="resume">
                 {" "}
                 Download cv{" "}
               </a>

@@ -29,6 +29,7 @@ function App() {
           <Home></Home>
           <Contactus></Contactus>
         </Outlet>
+        <br />
         <Footer />
       </Theme.Provider>
     </>

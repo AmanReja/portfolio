@@ -19,7 +19,7 @@ import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
 import wal from "../assets/Project images/wal.png";
 import { Link, NavLink } from "react-router-dom";
-import cv from "../assets/images/Aman2.pdf";
+import cv from "../assets/images/cv.pdf";
 
 function Home() {
   const value = useContext(Theme);

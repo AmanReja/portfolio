@@ -18,6 +18,7 @@ import todo from "../assets/Project images/todo.png";
 import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
 import wal from "../assets/Project images/wal.png";
+import chat from "../assets/Project images/chat.png";
 import { Link, NavLink } from "react-router-dom";
 import cv from "../assets/images/cv.pdf";
 import resume from "../assets/images/Amancv.pdf";
@@ -80,6 +81,11 @@ function Home() {
       name: "Wallpaper Downloader",
       img: wal,
       wlink: "https://wallpaperapp-w8f3.vercel.app/"
+    },
+    {
+      name: "Chat application",
+      img: chat,
+      wlink: "https://chat-front-i6td.vercel.app/"
     }
   ];
 

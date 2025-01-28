@@ -19,7 +19,7 @@ import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
 import wal from "../assets/Project images/wal.png";
 import { Link, NavLink } from "react-router-dom";
-import resume from "../assets/images/Aman2.pdf";
+import cv from "../assets/images/Aman2.pdf";
 
 function Home() {
   const value = useContext(Theme);
@@ -158,7 +158,7 @@ function Home() {
             ></div>
 
             <button className="bg-lime-400 hover:bg-violet-600 w-[150px] relative sm:block  rounded h-[40px]">
-              <a href={resume} download="resume">
+              <a href={cv} download="cv">
                 {" "}
                 Download cv{" "}
               </a>

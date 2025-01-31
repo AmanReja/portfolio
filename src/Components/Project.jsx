@@ -38,7 +38,7 @@ function Project() {
   return (
     <>
       {" "}
-      <div className="w-[100%] h-auto items-center  justify-between sm:px-[80px] p-0 shadow-inner flex flex-col relative top-[80px]">
+      <div className="w-[100%] h-[1000px] items-center py-[80px]  justify-between sm:px-[80px] p-0 shadow-inner flex flex-col relative top-[80px]">
         {projects.map((data) => (
           <>
             <h1 className="text-3xl uppercase ">{data.heading}</h1>

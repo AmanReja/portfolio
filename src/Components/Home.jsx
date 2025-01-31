@@ -10,7 +10,7 @@ import node from "../assets/logo/nodejs.png";
 import "./Home.css";
 import game from "../assets/Project images/game.png";
 import imbs from "../assets/Project images/imbs.png";
-import itemshope from "../assets/Project images/itemshop.png";
+import book from "../assets/Project images/book.png";
 import myntra from "../assets/Project images/myntra.png";
 import recipe from "../assets/Project images/recipe.png";
 import tictac from "../assets/Project images/tictac.png";
@@ -33,19 +33,19 @@ function Home() {
   console.log(55, load);
   const project = [
     {
+      name: "Book Shop",
+      img: book,
+      wlink: "https://front-book-mu.vercel.app/"
+    },
+    {
+      name: "Wallpaper Downloader",
+      img: wal,
+      wlink: "https://wallpaperapp-w8f3.vercel.app/"
+    },
+    {
       name: "Gaming website",
       img: game,
       wlink: "https://gaming-website-one.vercel.app/"
-    },
-    {
-      name: "Imbs website",
-      img: imbs,
-      wlink: "https://react-project1-three-pi.vercel.app/"
-    },
-    {
-      name: "Book Shop",
-      img: itemshope,
-      wlink: "https://front-book-mu.vercel.app/"
     },
     {
       name: "myntra Shope",
@@ -77,11 +77,7 @@ function Home() {
       img: text,
       wlink: "https://code-lac-eight.vercel.app/"
     },
-    {
-      name: "Wallpaper Downloader",
-      img: wal,
-      wlink: "https://wallpaperapp-w8f3.vercel.app/"
-    },
+
     {
       name: "Chat application",
       img: chat,
@@ -140,7 +136,7 @@ function Home() {
         <div
           className={
             !value.theme
-              ? " main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl bg-slate-100"
+              ? " main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl bg-white"
               : "  main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl bg-black"
           }
         >
@@ -159,7 +155,7 @@ function Home() {
             <div
               className={
                 !value.theme
-                  ? "anim-container bg-slate-100 duration-0 "
+                  ? "anim-container bg-white duration-0 "
                   : "anim-container bg-black duration-0 "
               }
             ></div>
@@ -232,7 +228,10 @@ function Home() {
         ))}
       </div>
       {/* <div className=" box-container w-[100%] bg-slate-500 h-[920px] absolute top-[110%] "></div> */}
-      <div className="  w-[100%] flex flex-wrap gap-[50px] px-[20px]">
+      <div
+        id="project"
+        className="  w-[100%] flex flex-wrap gap-[50px] px-[20px]"
+      >
         {project.map((p) => (
           <div className="image-box z-10 shadow-2xl  p-[50px]  hover:translate-y-[12px] duration-300 transition-all">
             <img

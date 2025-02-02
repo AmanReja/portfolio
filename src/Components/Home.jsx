@@ -22,6 +22,7 @@ import chat from "../assets/Project images/chat.png";
 import { Link, NavLink } from "react-router-dom";
 import cv from "../assets/images/cv.pdf";
 import resume from "../assets/images/Amancv.pdf";
+import travel from "../assets/Project images/travel.png";
 
 function Home() {
   const value = useContext(Theme);
@@ -41,6 +42,11 @@ function Home() {
       name: "Wallpaper Downloader",
       img: wal,
       wlink: "https://wallpaperapp-w8f3.vercel.app/"
+    },
+    {
+      name: "Travelia(working)",
+      img: travel,
+      wlink: "https://travel-frontend-delta-steel.vercel.app/"
     },
     {
       name: "Gaming website",

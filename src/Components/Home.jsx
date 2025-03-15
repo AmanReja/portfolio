@@ -23,6 +23,7 @@ import { Link, NavLink } from "react-router-dom";
 import cv from "../assets/images/cv.pdf";
 import resume from "../assets/images/Amancv.pdf";
 import travel from "../assets/Project images/travel.png";
+import Swip from "./Swip";
 
 function Home() {
   const value = useContext(Theme);
@@ -36,59 +37,59 @@ function Home() {
     {
       name: "Book Shop",
       img: book,
-      wlink: "https://front-book-mu.vercel.app/"
+      wlink: "https://front-book-mu.vercel.app/",
     },
     {
       name: "Wallpaper Downloader",
       img: wal,
-      wlink: "https://wallpaperapp-w8f3.vercel.app/"
+      wlink: "https://wallpaperapp-w8f3.vercel.app/",
     },
     {
       name: "Travelia(working)",
       img: travel,
-      wlink: "https://travel-frontend-delta-steel.vercel.app/"
+      wlink: "https://travel-frontend-delta-steel.vercel.app/",
     },
     {
       name: "Gaming website",
       img: game,
-      wlink: "https://gaming-website-one.vercel.app/"
+      wlink: "https://gaming-website-one.vercel.app/",
     },
     {
       name: "myntra Shope",
       img: myntra,
-      wlink: "https://dvsdvsdb.vercel.app/"
+      wlink: "https://dvsdvsdb.vercel.app/",
     },
     {
       name: "Get recipes",
       img: recipe,
-      wlink: "https://recipe-api-lyart.vercel.app/"
+      wlink: "https://recipe-api-lyart.vercel.app/",
     },
     {
       name: "Tictacto",
       img: tictac,
-      wlink: "https://tic-tac-to-xi.vercel.app/"
+      wlink: "https://tic-tac-to-xi.vercel.app/",
     },
     {
       name: "Todo List",
       img: todo,
-      wlink: "https://todu-list-ten.vercel.app/"
+      wlink: "https://todu-list-ten.vercel.app/",
     },
     {
       name: "Calculator",
       img: cal,
-      wlink: "https://calculator2-0-vert.vercel.app/"
+      wlink: "https://calculator2-0-vert.vercel.app/",
     },
     {
       name: "Text converter",
       img: text,
-      wlink: "https://code-lac-eight.vercel.app/"
+      wlink: "https://code-lac-eight.vercel.app/",
     },
 
     {
       name: "Chat application",
       img: chat,
-      wlink: "https://chat-front-i6td.vercel.app/"
-    }
+      wlink: "https://chat-front-i6td.vercel.app/",
+    },
   ];
 
   const Skills = [
@@ -100,8 +101,8 @@ function Home() {
       color: "#7f00ff",
       img: express,
       percent: 82,
-      str: 79.56
-    }
+      str: 79.56,
+    },
   ];
   const [animatedPercents, setAnimatedPercents] = useState(
     Skills.map(() => 0) // Initialize an array of 0s for each skill
@@ -253,6 +254,19 @@ function Home() {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center items-center flex-col pt-[80px] uppercase ">
+        <h1 className="text-3xl">What clints say about me</h1>
+        <p className="text-center sm:px-[400px] px-0 pt-[10px]">
+          I had the opportunity to work with some incredible clients, including
+          Shah Rukh Khan , Elon Musk, and Bill Gates. They all gave me great
+          feedback
+        </p>
+      </div>
+
+      <div className="h-600px">
+        {" "}
+        <Swip></Swip>
       </div>
     </>
   );

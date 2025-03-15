@@ -55,9 +55,7 @@ const Swip = () => {
                 />
                 <div className="flex w-full flex-col">
                   <div className="flex items-center justify-between">
-                    <h5 className="text-xl font-semibold text-black">
-                      {card.name}
-                    </h5>
+                    <h5 className="text-xl font-semibold ">{card.name}</h5>
                   </div>
                   <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
                     {card.profile}

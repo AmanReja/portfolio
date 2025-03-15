@@ -19,12 +19,15 @@ import cal from "../assets/Project images/cal.png";
 import text from "../assets/Project images/text.png";
 import wal from "../assets/Project images/wal.png";
 import chat from "../assets/Project images/chat.png";
+import Task from "../assets/new/task.png";
+import Loca from "../assets/new/location.png";
+import Mark from "../assets/new/marker.png";
+import Blog from "../assets/new/blog.png";
 import { Link, NavLink } from "react-router-dom";
 import cv from "../assets/images/cv.pdf";
 import resume from "../assets/images/Amancv.pdf";
 import travel from "../assets/Project images/travel.png";
 import Swip from "./Swip";
-import Newpslide from "./Newpslide";
 
 function Home() {
   const value = useContext(Theme);
@@ -90,6 +93,26 @@ function Home() {
       name: "Chat application",
       img: chat,
       wlink: "https://chat-front-i6td.vercel.app/",
+    },
+    {
+      name: "Task Master",
+      img: Task,
+      wlink: "https://task-frontend-three-liard.vercel.app/",
+    },
+    {
+      name: "Location tracker",
+      img: Loca,
+      wlink: "https://tracker-frontend-zeta.vercel.app/",
+    },
+    // {
+    //   name: "Attendance Marker(react native)",
+    //   img: Mark,
+    //   wlink: "",
+    // },
+    {
+      name: "Blog post(Redux)",
+      img: Blog,
+      wlink: "",
     },
   ];
 
@@ -189,7 +212,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <Newpslide></Newpslide> */}
 
       <div className=" box-2-container flex sm:h-[400px]  items-center justify-center    ">
         {Skills.map((data, index) => (

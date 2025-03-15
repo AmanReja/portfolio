@@ -24,6 +24,7 @@ import cv from "../assets/images/cv.pdf";
 import resume from "../assets/images/Amancv.pdf";
 import travel from "../assets/Project images/travel.png";
 import Swip from "./Swip";
+import Newpslide from "./Newpslide";
 
 function Home() {
   const value = useContext(Theme);
@@ -188,6 +189,7 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* <Newpslide></Newpslide> */}
 
       <div className=" box-2-container flex sm:h-[400px]  items-center justify-center    ">
         {Skills.map((data, index) => (

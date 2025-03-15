@@ -264,7 +264,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="h-600px">
+      <div className="h-[500px]">
         {" "}
         <Swip></Swip>
       </div>

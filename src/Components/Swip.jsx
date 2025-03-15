@@ -1,5 +1,6 @@
-import React from "react";
+import { React, useContext } from "react";
 import Srk from "../assets/images/srk.jpg";
+import Theme from "./Context/Theme";
 
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -8,6 +9,7 @@ import "../App.css";
 import "swiper/css/pagination";
 
 const Swip = () => {
+  const value = useContext(Theme);
   const cards = [
     {
       name: "Shahrukh khan",
@@ -46,8 +48,8 @@ const Swip = () => {
           className="max-w-[500px] w-[1000px] "
         >
           {cards.map((card) => (
-            <SwiperSlide className="flex w-full p-4 max-w-lg flex-col rounded-lg  shadow-sm border border-slate-200 my-6">
-              <div className="flex items-center gap-4 text-slate-800">
+            <SwiperSlide className="flex w-full p-4 max-w-lg flex-col rounded-lg  shadow-sm  my-6 ">
+              <div className="flex items-center gap-4 mb-[60px] outline-none">
                 <img
                   src={card.image}
                   alt="Tania Andrew"
@@ -55,7 +57,7 @@ const Swip = () => {
                 />
                 <div className="flex w-full flex-col">
                   <div className="flex items-center justify-between">
-                    <h5 className="text-xl font-semibold ">{card.name}</h5>
+                    <h5 className={"font-semibold"}>{card.name}</h5>
                   </div>
                   <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
                     {card.profile}
@@ -63,7 +65,7 @@ const Swip = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <p className="text-base text-gray-800 font-light leading-normal">
+                <p className={`text-base font-light leading-normal`}>
                   {card.description}
                 </p>
               </div>

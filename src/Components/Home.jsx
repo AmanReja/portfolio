@@ -163,12 +163,12 @@ function Home() {
 
   return (
     <>
-      <div className="flex justify-center relative w-[100%] overflow-y-hidden ">
+      <div className="flex justify-center relative w-[100%]">
         <div
           className={
             !value.theme
-              ? " main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl bg-white"
-              : "  main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl bg-black"
+              ? " main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl z-1 bg-white"
+              : "  main-container px-[50px] w-[80%] h-[400px] relative rounded-[5px] top-[97px] shadow-2xl z-1 bg-black"
           }
         >
           <img
@@ -198,7 +198,7 @@ function Home() {
               </a>
             </button>
 
-            <h2 className="font-thin text-1xl">
+            <h2 className="font-thin text-1xl relative sm:top-[60px]">
               Dynamic and detail-oriented MERN developer. Implementing
               user-friendly web applications. Proficient in HTML, CSS,
               JavaScript, and modern frameworks like React. Passionate about

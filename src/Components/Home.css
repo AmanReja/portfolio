@@ -97,7 +97,8 @@ circle {
     height: 690px;
     width: 100%;
     overflow: hidden;
-    padding: 23px;
+    padding: 35px;
+    margin-bottom: 85px;
   }
   svg {
     position: relative;
